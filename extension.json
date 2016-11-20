@@ -1,0 +1,47 @@
+{
+    "name": "JssorGallery",
+    "version": "0.0.1",
+    "author": [
+        "Jon Anderton"
+    ],
+    "url": "https://www.mediawiki.org/wiki/Extension:JssorGallery",
+    "descriptionmsg": "jssorgallery-desc",
+    "license-name": "MIT",
+    "type": "other",
+    "AutoloadClasses": {
+        "JssorGallery": "JssorGallery.class.php",
+        "JssorGalleryHooks": "JssorGallery.hooks.php"
+    },
+    "ExtensionMessagesFiles": {
+        "JssorGalleryMagic": "JssorGallery.i18n.alias.php"
+    },
+    "callback": "JssorGalleryHooks::onExtensionLoad",
+    "Hooks": {
+        "BeforePageDisplay": [
+            "JssorGalleryHooks::onBeforePageDisplay"
+        ],
+        "ParserFirstCallInit": [
+            "JssorGalleryHooks::onParserFirstCallInit"    
+        ]
+    },
+    "MessagesDirs": {
+        "JssorGallery": [
+            "i18n"
+        ]
+    },
+    "ResourceModules": {
+        "ext.jssorgallery.foo": {
+            "scripts": [
+                "modules/jssor.slider-21.1.6.min.js",
+                "modules/script.js"
+            ],
+            "styles": [
+                "modules/style.css"
+            ]
+        }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "",
+        "remoteExtPath": "JssorGallery"
+    }
+}
