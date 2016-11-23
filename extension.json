@@ -32,7 +32,7 @@
     "ResourceModules": {
         "ext.jssorgallery.foo": {
             "scripts": [
-                "modules/jssor.slider-21.1.6.min.js",
+                "modules/jssor.slider-21.1.6.mini.js",
                 "modules/script.js"
             ],
             "styles": [
