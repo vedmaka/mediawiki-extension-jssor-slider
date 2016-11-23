@@ -23,7 +23,7 @@ class JssorGallery {
 		        $slidesHtml .=
 		        '<div data-p="144.50" style="'.(($i > 0) ? "display: none;" : '').'">
                 	<img data-u="image" src="'.$file->getFullUrl().'" />
-                	<img data-u="thumb" src="'.$file->createThumb(72).'" />
+                	<img data-u="thumb" src="'.$file->createThumb(74).'" />
             	</div>';
 		        $i++;
 		    }
